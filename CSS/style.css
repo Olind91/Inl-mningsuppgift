@@ -402,6 +402,7 @@ html, body {
     margin:1rem;
     flex:1;
     border-radius:var(--border-radius-small);
+    transition:all 0.1s ease-in-out;
 
 }
 
@@ -412,7 +413,8 @@ html, body {
 
     .webshop-info .info-box img{
         margin-right:1.5rem;
-
+        filter:brightness(100%);
+        transition:all 0.1s ease-in-out;
     }
 
     .webshop-info .info-box:hover img{
@@ -424,7 +426,7 @@ html, body {
         color:var(--color-theme);
         font-size:1rem;
         font-weight:var(--font-weight-medium);
-
+        transition:all 0.1s ease-in-out;
     }
 
     .webshop-info .info-box:hover h1{
@@ -463,7 +465,9 @@ html, body {
         padding:0.5rem 1rem;
         font-weight:var(--border-radius-medium);
         height:38px;
-    }
+        transition:0.3s ease-in-out;
+
+     }
 
     .shop-by-category .category-box:hover .category-box-title{
         height:100%;
