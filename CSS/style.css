@@ -70,7 +70,14 @@ html, body {
     color:var(--color-white);
 }
 
+.instock{
+    color:var(--color-product-instock);
+}
 
+.outofstock{
+    color:var(--color-product-outofstock);
+
+}
 
 .section-title{
     padding:3rem 0;
@@ -291,6 +298,7 @@ html, body {
                 justify-content: space-between;
                 align-items:center;
                 padding:0.7rem;
+                transition:0.2s;
 
 
             }
@@ -312,6 +320,7 @@ html, body {
             .main-menu nav .browse-categories .dropdown-menu{
                 background-color:var(--color-theme);
                 width:100%;
+                transition:0.2s;
             }
             
             
@@ -414,7 +423,7 @@ html, body {
     .webshop-info .info-box img{
         margin-right:1.5rem;
         filter:brightness(100%);
-        transition:all 0.1s ease-in-out;
+        transition:0.1s ease-in-out;
     }
 
     .webshop-info .info-box:hover img{
@@ -465,7 +474,7 @@ html, body {
         padding:0.5rem 1rem;
         font-weight:var(--border-radius-medium);
         height:38px;
-        transition:0.3s ease-in-out;
+        transition:0.2s ease-in-out;
 
      }
 
@@ -527,6 +536,179 @@ html, body {
         grid-column:1/-1;
         grid-row:5/5;
     }
+
+/* NEW ARRIVALS RUBRIK */
+
+.new-arrivals{
+    margin-top:6rem;
+}
+
+
+
+/* New Arrivals tre boxar */
+
+.new-arriv{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+ .new-arriv .box1{
+        position:relative;
+       overflow:hidden;
+       
+    }
+
+     .new-arriv .box1 .box1-body{
+        position:absolute;
+        bottom:0;
+        color:var(--color-white);
+        z-index:1;
+        height:8%;
+        transition:0.2s ease-in-out;
+        padding-left:1rem;
+        width:100%;
+    }
+
+     .new-arriv .box1:hover .box1-body{
+        height:40%;
+        
+    }
+
+     .new-arriv .box1 .box1-body h1{
+        font-size:1.1rem;
+    }
+
+     .new-arriv .box1 .box1-body button{
+        background-color: transparent;
+        color:var(--color-white);
+        border-color:var(--color-white);
+        font-size:.875rem;
+        padding-left:0.5rem;
+        padding-right:0.5rem;
+        
+        
+
+    }
+
+     .new-arriv .box1 .box1-body .gammalt-pris{
+        text-decoration: line-through;
+        margin:0;
+    }
+
+     .new-arriv .box1 .box1-body .nytt-pris{
+        color:var(--color-theme);
+        font-weight:var(--font-weight-medium);
+        font-size:var(--font-size-18);
+        
+    }
+
+    
+    
+     .new-arriv .box1 .box1-background{
+        position:absolute;
+        bottom:0;
+        width:100%;
+        border-radius:0 var(--border-radius-small) 0 0;
+        background-color:var(--color-theme-dark);
+        color:var(--color-theme);
+        
+        font-weight:var(--border-radius-medium);
+        height:38px;
+        transition:0.2s ease-in-out;
+        
+
+    }
+    
+     .new-arriv .box1:hover .box1-background{
+            height:100%;
+        }
+
+        .new-arriv .box1 .box1-menu{
+        position:absolute;
+        z-index:1;
+        list-style:none;
+        margin:auto;
+        width:50px;
+        padding-left:0.9rem;
+        top:100%;
+        right:5%;
+        font-size:1.25rem;
+        border-radius:var(--border-radius-medium);
+        background-color:var(--color-white);
+        transition:top 0.2s ease-in-out;
+
+    }
+       
+     .new-arriv .box1:hover .box1-menu{
+            top:20px;
+        }
+        
+         .new-arriv li{
+            margin-top:0.4rem;
+            margin-bottom:0.4rem;
+        }
+        
+        
+         .new-arriv li a{
+            color:var(--color-gray-0);
+            
+        }
+        
+         .new-arriv li a:hover{
+            color:var(--color-theme);
+        }
+
+        .new-arriv .box1 .bottom{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            
+            }
+    /* KOLLA OCH FÖRSÖK FIXA BORDERN TILL DETTA "BOTTOM BORDER" */
+    .new-arriv .box1 .bottom .rate-stars{
+        margin-right:2rem;
+        margin-bottom:1rem;
+        color:var(--color-theme);
+    }
+
+        /* kolla även o fixa med hover över stjärnor */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
