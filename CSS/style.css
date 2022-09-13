@@ -555,7 +555,7 @@ html, body {
 
  .new-arriv .box1{
         position:relative;
-       overflow:hidden;
+        overflow:hidden;
        
     }
 
@@ -572,7 +572,6 @@ html, body {
 
      .new-arriv .box1:hover .box1-body{
         height:40%;
-        
     }
 
      .new-arriv .box1 .box1-body h1{
@@ -586,9 +585,6 @@ html, body {
         font-size:.875rem;
         padding-left:0.5rem;
         padding-right:0.5rem;
-        
-        
-
     }
 
      .new-arriv .box1 .box1-body .gammalt-pris{
@@ -600,12 +596,9 @@ html, body {
         color:var(--color-theme);
         font-weight:var(--font-weight-medium);
         font-size:var(--font-size-18);
-        
     }
 
-    
-    
-     .new-arriv .box1 .box1-background{
+    .new-arriv .box1 .box1-background{
         position:absolute;
         bottom:0;
         width:100%;
@@ -616,8 +609,6 @@ html, body {
         font-weight:var(--border-radius-medium);
         height:38px;
         transition:0.2s ease-in-out;
-        
-
     }
     
      .new-arriv .box1:hover .box1-background{
@@ -637,7 +628,6 @@ html, body {
         border-radius:var(--border-radius-medium);
         background-color:var(--color-white);
         transition:top 0.2s ease-in-out;
-
     }
        
      .new-arriv .box1:hover .box1-menu{
@@ -702,6 +692,13 @@ html, body {
     padding-top:10%;
     color:var(--color-white);
     background-color:var(--color-theme);
+    transition:0.2s ease-in-out;
+    
+}
+
+.thirty-percent .container .thirty-off:hover{
+    transform:scale(1.1);
+    border-radius:var(--border-radius-rounded);
 }
 
 .thirty-percent .container .thirty-off strong{
@@ -723,11 +720,14 @@ html, body {
     font-weight:var(--font-weight-medium);
     padding-left:1.4rem;
     padding-right:1.4rem;
+    transition:0.2s ease-in-out;
 }
 
 .thirty-percent .container .thirty-off a:hover{
     background-color:var(--color-white);
     color:var(--color-theme-dark);
+    font-size:var(--font-size-18);
+    
     /* PILLA MER MED DEN HÄR KNAPPEN */
 }
 
@@ -737,6 +737,7 @@ html, body {
     margin-left:40%;
     padding-top:10%;
     color:var(--color-white);
+    
 }
 
 .thirty-percent .container .learn-more p{
@@ -751,6 +752,7 @@ html, body {
     font-weight:var(--font-weight-medium);
     padding-left:1.4rem;
     padding-right:1.4rem;
+    transition:0.2s ease-in-out;
 }
 
 .thirty-percent .container .learn-more a:hover{
