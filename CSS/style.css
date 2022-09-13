@@ -361,7 +361,7 @@ html, body {
     text-align:center;
     padding-top:2.5rem;
     padding-bottom:2.5rem;
-
+    
 
 }
 
@@ -540,7 +540,7 @@ html, body {
 /* NEW ARRIVALS RUBRIK */
 
 .new-arrivals{
-    margin-top:6rem;
+    margin-top:4rem;
 }
 
 
@@ -676,15 +676,87 @@ html, body {
 
 
 
+/* 30% OFF */
 
+.thirty-percent{
+    
+    margin-top:4rem;
+    margin-bottom:4rem;
+    background-color:var(--color-gray-1);
+    
+    
+}
 
+.thirty-percent .container{
+    display:flex;
+    justify-content: space-between;
+    text-align:center;
+    
+}
 
+/* Vänstra sidan */
+.thirty-percent .container .thirty-off{
+    
+    width:100%;
+    height:418px;
+    padding-top:10%;
+    color:var(--color-white);
+    background-color:var(--color-theme);
+}
 
+.thirty-percent .container .thirty-off strong{
+    font-size:var(--font-size-60);
+}
 
+.thirty-percent .container .thirty-off h1{
+    font-style:var(--font-play);
+}
 
+.thirty-percent .container .thirty-off p{
+    font-style:var(--font-roboto);
+}
 
+.thirty-percent .container .thirty-off a{
+    background-color:var(--color-theme-dark);
+    color:var(--color-white);
+    border-radius:var(--border-radius-medium);
+    font-weight:var(--font-weight-medium);
+    padding-left:1.4rem;
+    padding-right:1.4rem;
+}
 
+.thirty-percent .container .thirty-off a:hover{
+    background-color:var(--color-white);
+    color:var(--color-theme-dark);
+    /* PILLA MER MED DEN HÄR KNAPPEN */
+}
 
+/* Högra sidan */
+.thirty-percent .learn-more{
+    text-align:start;
+    margin-left:40%;
+    padding-top:10%;
+    color:var(--color-white);
+}
+
+.thirty-percent .container .learn-more p{
+    font-style:var(--font-roboto);
+    font-size:var(--font-size-12);
+}
+
+.thirty-percent .container .learn-more a{
+    background-color:var(--color-white);
+    color:var(--color-theme);
+    border-radius:var(--border-radius-medium);
+    font-weight:var(--font-weight-medium);
+    padding-left:1.4rem;
+    padding-right:1.4rem;
+}
+
+.thirty-percent .container .learn-more a:hover{
+    background-color:var(--color-theme-dark);
+    color:var(--color-white);
+}
 
 
 
