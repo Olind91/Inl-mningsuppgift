@@ -867,10 +867,40 @@ html, body {
 }
 
 
+/* TOP SELLER GRID */
+.top-sellers{
+    
+    margin-bottom:2rem;
+    
+}
+    .top-sellers .topgrid{
+        display:grid;
+        gap:0.8rem;
+        grid-template-columns: repeat(4, minmax(100px, 360px));
+        grid-template-rows: repeat(4, minmax(100px, 150px));
+    }
 
 
-
-
+    .top-sellers .topgrid #topbox1{
+        background-color:var(--color-theme);
+        color:white;
+        grid-column:1/3;
+        grid-row:1/-1;
+    }
+    .top-sellers .topgrid #topbox2{
+        color:white;
+        background-color:var(--color-product-outofstock);
+        grid-column:3/-1;
+        grid-row:1/3;
+        
+    }
+    
+    .top-sellers .topgrid #topbox3{
+        color:white;
+        background-color:var(--color-dark);
+        grid-column:3/-1;
+        grid-row:3/-1;
+    }
 
 
 
