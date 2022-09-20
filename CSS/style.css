@@ -646,7 +646,7 @@ html, body {
         border-radius:0 var(--border-radius-small) 0 0;
         background-color:var(--color-theme-dark);
         color:var(--color-theme);
-        
+        opacity:0.8;
         font-weight:var(--border-radius-medium);
         height:38px;
         transition:0.2s ease-in-out;
@@ -810,99 +810,143 @@ html, body {
 .flashdown{
     background-color:var(--color-theme-dark);
     margin-bottom:4rem;
-    
-    
 }
-
 
 .flashdown .container{
     display:flex;
     justify-content: space-between;
     height:418px;
-    text-align:center;
-}
 
-/* Vänster sida */
+} 
 
-.flashdown .container .flash-sale{
-    padding-top:40px;
-    height:270px;
-    width:320px;
+
+/* Vänstra sidan */
+.flashdown .flash-sale{
     color:var(--color-white);
-    background-color:var(--color-theme);
-    margin-bottom:15%;
-}
-
-.flashdown .flash-sale h1{
-    font-size:4rem;
-    
-}
-.flashdown .flash-sale p{
-    font-size:var(--font-size-18);
+    background-color: var(--color-theme);
+    height:70%;
+    width:26%;
+    text-align: center;
+    padding-top:20px;
     
 }
 
-/* Höger sida */
+    .flashdown .flash-sale h1{
+        font-size:var(--font-size-60);
+        
+    }
 
-.flashdown .container .countdown{
-    width:65%;
-    padding-top:159px;
-}
+        .flashdown .flash-sale p{
+            font-size:var(--font-size-18);
+        }
 
-.flashdown .countdown .circle{
-    display:flex;
-    justify-content: space-evenly;
+            
+
+    
+
+/* Högra sidan */
+.flashdown .countdown{
     color:var(--color-white);
+    width:60%;
 }
 
-.flashdown .container .countdown a{
-    margin-top:2%;
+    .flashdown .countdown .circle{
+        display:flex;
+        justify-content: space-evenly;
+        padding-top:120px;
+        text-align:center;
+    }
+
+    
+    .flashdown .countdown .circle .circles{
+        
+        background-color: var(--color-white);
+        padding:1rem;
+        border-radius:var(--border-radius-rounded);
+        width:130px;
+        border:dotted 3px var(--color-theme);
+    }
+
+    .flashdown .countdown .circle .circles h1{
+        color:var(--color-theme);
+        font-weight:var(--font-weight-bold);
+        
+    }
+
+    .flashdown .countdown .circle .circles p{
+        color:black;
+        font-weight:var(--font-weight-medium);
+    }
+
+
+
+
+.flashdown .countdown a{
+    margin-left:40%;
+    margin-top:5%;
     background-color:var(--color-white);
     color:var(--color-theme);
     border-radius:var(--border-radius-medium);
     font-weight:var(--font-weight-medium);
-    padding-left:1.4rem;
-    padding-right:1.4rem;
+    padding:0.7rem;
+    transition:0.2s ease-in-out;
+    width:20%;
+}
     
+.flashdown .countdown a:hover{
+    background-color:var(--color-theme-dark);
+    color:var(--color-white);
 }
 
 
-/* TOP SELLER GRID */
+
+
+
+
+
+
+
+
+
+    /* TOP SELLER GRID */
 .top-sellers{
     
     margin-bottom:2rem;
-    
+    display:grid;
+    gap:1.8rem;
+    grid-template-columns: repeat(4, minmax(100px, 360px));
+    grid-template-rows: repeat(4, minmax(100px, 150px));
 }
-    .top-sellers .topgrid{
-        display:grid;
-        gap:0.8rem;
-        grid-template-columns: repeat(4, minmax(100px, 360px));
-        grid-template-rows: repeat(4, minmax(100px, 150px));
-    }
+    
+.top-sellers #topbox1{
+        
+    grid-column:1/3;
+    grid-row:1/-1;
 
-
-    .top-sellers .topgrid #topbox1{
-        background-color:var(--color-theme);
-        color:white;
-        grid-column:1/3;
-        grid-row:1/-1;
     }
-    .top-sellers .topgrid #topbox2{
-        color:white;
-        background-color:var(--color-product-outofstock);
-        grid-column:3/-1;
-        grid-row:1/3;
+    
+.top-sellers #topbox1 .box1 .box1-body{
+    height:4%;
+}
+.top-sellers #topbox1 .box1:hover .box1-body{
+    height:20%;
+}
+
+    .top-sellers  #topbox2{
+        
+    grid-column:3/-1;
+    grid-row:1/3;
         
     }
     
-    .top-sellers .topgrid #topbox3{
-        color:white;
-        background-color:var(--color-dark);
-        grid-column:3/-1;
-        grid-row:3/-1;
+    .top-sellers #topbox3{
+        
+    grid-column:3/-1;
+    grid-row:3/-1;
     }
 
 
+    
 
 
 
@@ -917,8 +961,91 @@ html, body {
 
 
 
+    /* SUBSCRIBE NOW */
+
+.subscribe{
+background-color:var(--color-gray-4);
+
+}
+
+.subscribe .container{
+    
+    display:flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.subscribe .container .subnow{
+    margin-top:4rem;
+    margin-bottom:4rem;
+}
+    .subscribe .container .subnow h1{
+        font-family:var(--font-roboto);
+        font-weight:var(--font-weight-bold);
+        font-size:var(--font-size-36);
+    }
+
+        .subscribe .container .subnow h1 span{
+            
+            color:var(--color-theme);
+        }
+
+            .subscribe .container .subnow p{
+                
+                font-family: var(--font-roboto);
+                font-weight:var(--font-weight-regular);
+                width:60%;
+            }
 
 
+
+/* Borde läggas in en bild? */
+.subscribe .container .tomruta{
+    background-color:var(--color-gray-1);
+    width:53%;
+}
+
+
+
+/* SUBSCRIBE NOW FORM */
+
+.subscribe .subnow #submit{
+    border-radius: var(--border-radius-medium);
+        margin:auto;
+        position:relative;
+        height:35px;
+}
+
+.subscribe .subnow #submit input{
+    position:absolute;
+    border-radius:var(--border-radius-medium);
+    height:100%;
+    width:60%;
+    outline:none;
+    border:1px solid var(--color-gray-2);
+    font-size:0.875rem;
+    padding-left:1rem;  
+}
+
+        .subscribe .subnow #submit button{
+            position:absolute;
+                top:0;
+                right:260px;
+                width:120px;
+                height:100%;
+                background: var(--color-theme);
+                color:var(--color-white);
+                border:none;
+                border-radius:var(--border-radius-medium);
+                
+                transition:0.2s ease-in-out;
+        }
+
+            .subscribe .subnow #submit button:hover{
+                background-color:var(--color-theme-dark);
+            }
 
 
 
