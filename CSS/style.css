@@ -11,6 +11,8 @@
     --color-gray-2:#E3E3E3;
     --color-gray-3:#EEEEEE;
     --color-gray-4:#F6F6F6;
+    --color-gray-5:#777777;
+    --color-gray-6:#50546E;;
     --color-product-instock:#82D8C6;
     --color-product-outofstock:#FE6C6C;
 
@@ -83,6 +85,10 @@ html, body {
 
 }
 
+.required{
+    color:var(--color-theme);
+}
+
 .section-title{
     padding:3rem 0;
     color:var(--color-theme-dark);
@@ -101,6 +107,59 @@ html, body {
         margin:1rem 0;
 
     } 
+
+    .form-theme .reg-body{
+        padding:1.5rem;
+        border-radius:var(--border-radius-small);
+        background-color:var(--color-gray-4);
+    }
+    
+        
+    
+    .form-theme .reg-body .register h1{
+            font-family:var(--font-roboto);
+            font-weight:var(--font-weight-medium);
+            color:var(--color-theme-dark);
+            font-size:1.5rem;
+        }
+    
+        .form-theme .reg-body .register .reg-text{
+            color:var(--color-gray-5);
+            font-size:0.875rem;
+            margin:1.5rem 0;
+            line-height:1.5rem;
+    
+        }
+    
+        .form-theme .reg-body .register .reg-text2{
+            font-size:0.875rem;
+             margin:1.5rem 0;
+            line-height:1.5rem;
+        }
+    
+        .form-theme .reg-body .register .reg-text2 a{
+            color:var(--color-theme);
+            text-decoration: none;
+            font-weight:var(--font-weight-bold);
+        }
+    
+        .form-theme .reg-body .register .reg-text2 a:hover{
+            color:var(--color-theme-dark);
+    
+        }
+      
+        .form-theme input{
+        display:block;
+        width:100%;
+        border:none;
+        border-radius:var(--border-radius-small);
+        padding:0.4rem;
+        margin:0.5rem 0;
+    }
+        .form-theme input:focus{
+            outline:0;
+            box-shadow: 0 0 2px 0 var(--color-dark);
+        }
 
 /* top-menu */
 
@@ -1051,8 +1110,17 @@ background-color:var(--color-gray-4);
 
 
 
+/* FOOTER */
 
+.footer{
+    background-color:var(--color-theme-dark);
+    height:60px;
+}
 
+.footer .copyright{
+    color:var(--color-white);
+    padding-top:20px;
+}
 
 
 
@@ -1264,3 +1332,128 @@ background-color:var(--color-gray-4);
 
     
 }
+
+
+
+
+/* BREADCRUMB SOON tm */
+
+.brödsmula{
+    background-color:var(--color-gray-6);
+    padding:2.5rem 0;
+}
+
+.brödsmula .container{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.brödsmula .smulspår{
+    display:flex;
+    align-items:center;
+    
+}
+
+.brödsmula ul{
+    list-style:none;
+    font-size:var(--font-size-14);
+    
+}
+
+.brödsmula h1{
+    color:var(--color-theme);
+    font-size:var(--font-size-18);
+}
+
+.brödsmula a{
+    color:var(--color-theme);
+    text-decoration: none;
+
+}
+
+.brödsmula li{
+    color:var(--color-white);
+}
+
+.brödsmula .smulspår li+li:before{
+    padding:0 0.7rem 0 1rem;
+    color:var(--color-white);
+    content:"/\00a0";
+}
+
+/* LOG IN */
+
+.remember-password{
+    display:flex;
+    justify-content:space-between;
+    
+}
+
+    .remember-password input{
+        width:3%;
+        
+    }
+
+    .remember-password label{
+        margin-right:18rem;
+        padding-top:3px;
+    }
+
+    .remember-password a{
+        color:var(--color-theme);
+        text-decoration:none;
+        text-shadow:0 0.025em var(--color-theme-dark), 0 -0.025em var(--color-theme-dark);
+                
+    }
+        .remember-password a:hover{
+            color:var(--color-dark);
+        }
+
+.facegoogle{
+    display:flex;
+    justify-content: space-between;
+}
+   
+
+
+.or-log-with h1{
+    width:100%;
+    border-bottom:1px solid var(--color-dark);
+    text-align:center;
+    line-height:0.1em;
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+
+.or-log-with span{
+    background-color:var(--color-gray-4);
+    padding:25px;
+    font-size:1rem;
+    font-weight:var(--font-weight-bold);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* REGISTER*/
+
+.signup-signin{
+    margin:6rem 0;
+}
+
+
+.signup-signin .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:2rem;
+    align-items:start;
+}
+
