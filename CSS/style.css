@@ -56,7 +56,7 @@ html, body {
 .btn-theme:hover{
     background-color:var(--color-theme-dark);
     color:var(--color-white);
-    font-size:var(--font-size-16);
+    
 }
 
 .btn-mitten{
@@ -64,8 +64,10 @@ html, body {
     color:var(--color-white);
     border-radius:var(--border-radius-medium);
     font-weight:var(--font-weight-medium);
-    padding-left:1.4rem;
-    padding-right:1.4rem;
+    padding-left:1.8rem;
+    padding-right:1.8rem;
+    padding-top:0.8rem;
+    padding-bottom:0.8rem;
     transition:0.2s ease-in-out;
 }
 
@@ -397,7 +399,7 @@ html, body {
                 justify-content: space-between;
                 align-items:center;
                 padding:0.7rem;
-                transition:0.2s;
+                transition:0.2s ease-in-out;
 
 
             }
@@ -419,7 +421,7 @@ html, body {
             .main-menu nav .browse-categories .dropdown-menu{
                 background-color:var(--color-theme);
                 width:100%;
-                transition:0.2s;
+                transition:0.1s ease-in-out;
             }
             
             
@@ -431,10 +433,6 @@ html, body {
             .main-menu nav .browse-categories .dropdown-menu .dropdown-item:hover{
                 background-color:var(--color-theme-dark);
                 color:var(--color-theme-light);
-                
-
-
-                
             }
            
 
@@ -642,6 +640,10 @@ html, body {
     margin-top:4rem;
 }
 
+.new-arrivals .container{
+    padding:0;
+}
+
 
 
 /* New Arrivals tre boxar */
@@ -650,12 +652,14 @@ html, body {
     display:flex;
     justify-content: space-between;
     margin-bottom:4rem;
+    
 }
 
 
  .new-arriv .box1{
         position:relative;
         overflow:hidden;
+        background: var(--color-gray-3);
        
     }
 
@@ -668,6 +672,7 @@ html, body {
         transition:0.2s ease-in-out;
         padding-left:1rem;
         width:100%;
+        
     }
 
      .new-arriv .box1:hover .box1-body{
@@ -676,6 +681,7 @@ html, body {
 
      .new-arriv .box1 .box1-body h1{
         font-size:1.1rem;
+        
     }
 
      .new-arriv .box1 .box1-body button{
@@ -683,8 +689,10 @@ html, body {
         color:var(--color-white);
         border-color:var(--color-white);
         font-size:.875rem;
-        padding-left:0.5rem;
-        padding-right:0.5rem;
+        padding-left:0.8rem;
+        padding-right:0.8rem;
+        margin:0.5rem 0;
+        
     }
 
      .new-arriv .box1 .box1-body .gammalt-pris{
@@ -762,7 +770,7 @@ html, body {
         color:var(--color-theme);
     }
 
-        /* kolla även o fixa med hover över stjärnor */
+      
 
 
 
@@ -851,6 +859,8 @@ html, body {
     font-weight:var(--font-weight-medium);
     padding-left:1.4rem;
     padding-right:1.4rem;
+    padding-top:0.8rem;
+    padding-bottom:0.8rem;
     transition:0.2s ease-in-out;
 }
 
@@ -970,7 +980,7 @@ html, body {
     /* TOP SELLER GRID */
 .top-sellers{
     
-    margin-bottom:2rem;
+    margin:0;
     display:grid;
     gap:1.8rem;
     grid-template-columns: repeat(4, minmax(100px, 360px));
@@ -978,7 +988,7 @@ html, body {
 }
     
 .top-sellers #topbox1{
-        
+    width:660px;   
     grid-column:1/3;
     grid-row:1/-1;
 
@@ -1070,42 +1080,76 @@ background-color:var(--color-gray-4);
 
 /* SUBSCRIBE NOW FORM */
 
-.subscribe .subnow #submit{
-    border-radius: var(--border-radius-medium);
-        margin:auto;
-        position:relative;
-        height:35px;
+.subscribe .container{
+    position:relative;
+    display:block;
+    padding:3.5rem 0;
+    overflow:hidden;
+    
+    
 }
 
-.subscribe .subnow #submit input{
+.subscribe .container h1{
+    font-size:var(--font-size-24);
+    font-weight:var(--font-weight-bold);
+}
+
+.subscribe .container span{
+    color:var(--color-theme);
+}
+
+.subscribe .container p{
+    width:35%;
+    
+}
+
+.subscribe #submit{
+    height:46px;
+    position:relative;
+    width:30%;
+}
+
+.subscribe #submit input{
     position:absolute;
-    border-radius:var(--border-radius-medium);
     height:100%;
-    width:60%;
+    width:100%;
+    border-radius:var(--border-radius-medium);
     outline:none;
     border:1px solid var(--color-gray-2);
     font-size:0.875rem;
     padding-left:1rem;  
 }
 
-        .subscribe .subnow #submit button{
+        .subscribe #submit button{
             position:absolute;
-                top:0;
-                right:260px;
+                top:9%;
+                right:1%;
+                height:80%;
                 width:120px;
-                height:100%;
                 background: var(--color-theme);
                 color:var(--color-white);
                 border:none;
                 border-radius:var(--border-radius-medium);
-                
                 transition:0.2s ease-in-out;
         }
 
-            .subscribe .subnow #submit button:hover{
+            .subscribe  #submit button:hover{
                 background-color:var(--color-theme-dark);
             }
 
+
+            /* SKITRUTA, HITTA ETT SÄTT O FIXA */
+
+    .subscribe .tomruta{
+        position:absolute;
+        top:0;
+        left:50%;
+        
+        background-color:var(--color-gray-1);
+        
+        height:100%;
+        
+    }
 
 
 
@@ -1338,45 +1382,45 @@ background-color:var(--color-gray-4);
 
 /* BREADCRUMB SOON tm */
 
-.brödsmula{
+.breadcrumb{
     background-color:var(--color-gray-6);
     padding:2.5rem 0;
 }
 
-.brödsmula .container{
+.breadcrumb .container{
     display:flex;
     justify-content: space-between;
 }
 
 
-.brödsmula .smulspår{
+.breadcrumb .breadlinks{
     display:flex;
     align-items:center;
     
 }
 
-.brödsmula ul{
+.breadcrumb ul{
     list-style:none;
     font-size:var(--font-size-14);
     
 }
 
-.brödsmula h1{
+.breadcrumb h1{
     color:var(--color-theme);
     font-size:var(--font-size-18);
 }
 
-.brödsmula a{
+.breadcrumb a{
     color:var(--color-theme);
     text-decoration: none;
 
 }
 
-.brödsmula li{
+.breadcrumb li{
     color:var(--color-white);
 }
 
-.brödsmula .smulspår li+li:before{
+.breadcrumb .breadlinks li+li:before{
     padding:0 0.7rem 0 1rem;
     color:var(--color-white);
     content:"/\00a0";
