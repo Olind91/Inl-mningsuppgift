@@ -163,8 +163,8 @@ html, body {
             box-shadow: 0 0 2px 0 var(--color-dark);
         }
 
-/* top-menu */
 
+/* top-menu */
 
 
 .top-menu{
@@ -195,42 +195,43 @@ html, body {
             display:flex;
         
         }
-                /* ENG, EUR-knappar */
-                .top-menu .site-settings .dropdown-theme {
-                    background-color: var(--color-theme);
-                    color:var(--color-white);
-                    border:none;
-                }
-        
-                .top-menu .site-settings .dropdown-theme button{
-                    background-color: var(--color-theme);
-                    color:var(--color-white);
-                    border:none;
-                    
-                }
-        
-                .top-menu .site-settings .dropdown-theme button:hover{
-                    color:var(--color-theme-dark);
-                }
-        
-        
-                .top-menu .site-settings .dropdown-theme .dropdown-menu{   
-                   border:none;
-                }
-        
-                .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item{   
-                    background-color: var(--color-theme);
-                    color:var(--color-white);
-                    border:none;
-                    width:100%;
-                    margin:0;
-                    
-                }
-        
-                .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover{   
-                    background-color: var(--color-theme-dark);
-                    color:var(--color-white);
-                }
+            /* ENG, EUR-knappar */
+            
+            .top-menu .site-settings .dropdown-theme {
+                background-color: var(--color-theme);
+                color:var(--color-white);
+                border:none;
+            }
+    
+            .top-menu .site-settings .dropdown-theme button{
+                background-color: var(--color-theme);
+                color:var(--color-white);
+                border:none;
+                
+            }
+    
+            .top-menu .site-settings .dropdown-theme button:hover{
+                color:var(--color-theme-dark);
+            }
+    
+    
+            .top-menu .site-settings .dropdown-theme .dropdown-menu{   
+                border:none;
+            }
+    
+            .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item{   
+                background-color: var(--color-theme);
+                color:var(--color-white);
+                border:none;
+                width:100%;
+                margin:0;
+                
+            }
+    
+            .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover{   
+                background-color: var(--color-theme-dark);
+                color:var(--color-white);
+            }
 
 
 
@@ -400,13 +401,11 @@ html, body {
                 align-items:center;
                 padding:0.7rem;
                 transition:0.2s ease-in-out;
-
-
             }
+            
             .main-menu nav .browse-categories button:hover{
                 background-color:var(--color-theme-dark);
                 color:var(--color-white);
-
             }
 
             .main-menu nav .browse-categories button span{
@@ -450,55 +449,43 @@ html, body {
 
 .mitten{
     background-color:var(--color-gray-4);
-
-    
 }
 
 .mitten .container{
     text-align:center;
     padding-top:2.5rem;
     padding-bottom:2.5rem;
-    
-
 }
-
-
 
 .mitten-body h1{
  font-family:var(--font-play);
  font-size:3.5rem;
-
 }
 
 .mitten-body h1 strong{
     font-weight:var(--font-weight-bold);
     color:var(--color-theme);
-
 }
 
 .mitten .mitten-body p{
     margin:2rem 0;
-    
-
 }
 
 .mitten img{
     display:none;
 }
 
+
 /* Fyra lådor under mittendelen */
 
 .webshop-info{
     padding:4rem 0;
-
 }
 
 .webshop-info .container{
     max-width:1600px;
     display:grid;
     justify-content:space-evenly;
-    
-
 }
 
 .webshop-info .info-box{
@@ -510,7 +497,6 @@ html, body {
     flex:1;
     border-radius:var(--border-radius-small);
     transition:all 0.1s ease-in-out;
-
 }
 
     .webshop-info .info-box:hover{
@@ -526,7 +512,6 @@ html, body {
 
     .webshop-info .info-box:hover img{
         filter:brightness(1000%);
-
     }
 
     .webshop-info .info-box h1{
@@ -538,12 +523,10 @@ html, body {
 
     .webshop-info .info-box:hover h1{
         color:var(--color-white);
-    
     }
 
+
 /* Shop by category */
-
-
 
 .shop-by-category .grid{
     display:grid;
@@ -559,7 +542,6 @@ html, body {
         height:100%;
         width:100%;
         overflow:hidden;
-        
     }
 
     .shop-by-category .category-box .category-box-title{
@@ -573,8 +555,7 @@ html, body {
         font-weight:var(--border-radius-medium);
         height:38px;
         transition:0.2s ease-in-out;
-
-     }
+    }
 
     .shop-by-category .category-box:hover .category-box-title{
         height:100%;
@@ -589,25 +570,21 @@ html, body {
         margin-top:0.5rem;
     }
 
-    /* ABSOLUT INTE KLARA O BRA BILDER */
     .shop-by-category .category-box img{
-       
         height:100%;
         width:100%;
         object-fit: cover;
-        
-        
     }
 
-    /* SHOP BY CATEGORY GRID */
+    
+/* SHOP BY CATEGORY GRID */
 
     #category-box-1{
-
         grid-column:1/-1;
         grid-row:1/1;
     }
+    
     #category-box-2{
-        
         grid-column: 1/-1;
         grid-row: 2/2;
     }
@@ -635,6 +612,7 @@ html, body {
         grid-row:5/5;
     }
 
+
 /* NEW ARRIVALS RUBRIK */
 
 .new-arrivals{
@@ -646,14 +624,12 @@ html, body {
 }
 
 
-
 /* New Arrivals tre boxar */
 
 .new-arriv{
     display:flex;
     justify-content: space-between;
     margin-bottom:4rem;
-    
 }
 
 
@@ -661,7 +637,6 @@ html, body {
         position:relative;
         overflow:hidden;
         background: var(--color-gray-3);
-       
     }
 
      .new-arriv .box1 .box1-body{
@@ -673,7 +648,6 @@ html, body {
         transition:0.2s ease-in-out;
         padding-left:1rem;
         width:100%;
-        
     }
 
      .new-arriv .box1:hover .box1-body{
@@ -682,7 +656,6 @@ html, body {
 
      .new-arriv .box1 .box1-body h1{
         font-size:1.1rem;
-        
     }
 
      .new-arriv .box1 .box1-body button{
@@ -693,7 +666,6 @@ html, body {
         padding-left:0.8rem;
         padding-right:0.8rem;
         margin:0.5rem 0;
-        
     }
 
      .new-arriv .box1 .box1-body .gammalt-pris{
@@ -751,7 +723,6 @@ html, body {
         
          .new-arriv li a{
             color:var(--color-gray-0);
-            
         }
         
          .new-arriv li a:hover{
@@ -762,9 +733,8 @@ html, body {
             display:flex;
             justify-content: space-between;
             align-items:center;
-            
-            }
-    /* KOLLA OCH FÖRSÖK FIXA BORDERN TILL DETTA "BOTTOM BORDER" */
+        }
+    
     .new-arriv .box1 .bottom .rate-stars{
         margin-right:2rem;
         margin-bottom:1rem;
@@ -772,13 +742,9 @@ html, body {
     }
 
       
-
-
-
 /* 30% OFF */
 
 .thirty-percent{
-    
     margin-top:4rem;
     margin-bottom:4rem;
     background-color:var(--color-gray-1);
@@ -788,12 +754,12 @@ html, body {
     display:flex;
     justify-content: space-between;
     text-align:center;
-    
 }
 
+
 /* Vänstra sidan */
+
 .thirty-percent .container .thirty-off{
-    
     width:100%;
     height:418px;
     padding-top:10%;
@@ -805,12 +771,10 @@ html, body {
 .thirty-percent .container .thirty-off:hover{
     transform:scale(1.1);
     border-radius:var(--border-radius-rounded);
-    
 }
 
 .thirty-percent .container .thirty-off strong{
     font-size:var(--font-size-60);
-    
 }
 
 .thirty-percent .container .thirty-off h1{
@@ -835,12 +799,11 @@ html, body {
     background-color:var(--color-white);
     color:var(--color-theme-dark);
     font-size:var(--font-size-18);
-
-    
-    /* PILLA MER MED DEN HÄR KNAPPEN */
 }
 
+
 /* Högra sidan */
+
 .thirty-percent .learn-more{
     text-align:start;
     margin-left:40%;
@@ -872,10 +835,7 @@ html, body {
 
 
 
-
-
 /* FLASH SALE */
-
 
 .flashdown{
     background-color:var(--color-theme-dark);
@@ -886,11 +846,11 @@ html, body {
     display:flex;
     justify-content: space-between;
     height:418px;
-
 } 
 
 
 /* Vänstra sidan */
+
 .flashdown .flash-sale{
     color:var(--color-white);
     background-color: var(--color-theme);
@@ -898,23 +858,19 @@ html, body {
     width:26%;
     text-align: center;
     padding-top:20px;
-    
 }
 
     .flashdown .flash-sale h1{
         font-size:var(--font-size-60);
-        
     }
 
         .flashdown .flash-sale p{
             font-size:var(--font-size-18);
         }
 
-            
-
-    
 
 /* Högra sidan */
+
 .flashdown .countdown{
     color:var(--color-white);
     width:60%;
@@ -929,7 +885,6 @@ html, body {
 
     
     .flashdown .countdown .circle .circles{
-        
         background-color: var(--color-white);
         padding:1rem;
         border-radius:var(--border-radius-rounded);
@@ -940,16 +895,12 @@ html, body {
     .flashdown .countdown .circle .circles h1{
         color:var(--color-theme);
         font-weight:var(--font-weight-bold);
-        
     }
 
     .flashdown .countdown .circle .circles p{
         color:black;
         font-weight:var(--font-weight-medium);
     }
-
-
-
 
 .flashdown .countdown a{
     margin-left:40%;
@@ -970,17 +921,9 @@ html, body {
 
 
 
+/* TOP SELLER GRID */
 
-
-
-
-
-
-
-
-    /* TOP SELLER GRID */
 .top-sellers{
-    
     margin:0;
     display:grid;
     gap:1.8rem;
@@ -992,8 +935,7 @@ html, body {
     width:660px;   
     grid-column:1/3;
     grid-row:1/-1;
-
-    }
+}
     
 .top-sellers #topbox1 .box1 .box1-body{
     height:4%;
@@ -1003,48 +945,27 @@ html, body {
 }
 
     .top-sellers  #topbox2{
-        
-    grid-column:3/-1;
-    grid-row:1/3;
-        
+        grid-column:3/-1;
+        grid-row:1/3;
     }
     
     .top-sellers #topbox3{
-        
-    grid-column:3/-1;
-    grid-row:3/-1;
+        grid-column:3/-1;
+        grid-row:3/-1;
     }
 
 
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* SUBSCRIBE NOW */
+/* SUBSCRIBE NOW */
 
 .subscribe{
 background-color:var(--color-gray-4);
-
 }
 
 .subscribe .container{
-    
     display:flex;
     justify-content: space-between;
-    
-    
-    
 }
 
 .subscribe .container .subnow{
@@ -1058,20 +979,15 @@ background-color:var(--color-gray-4);
     }
 
         .subscribe .container .subnow h1 span{
-            
             color:var(--color-theme);
         }
 
             .subscribe .container .subnow p{
-                
                 font-family: var(--font-roboto);
                 font-weight:var(--font-weight-regular);
                 width:60%;
             }
 
-
-
-/* Borde läggas in en bild? */
 .subscribe .container .tomruta{
     background-color:var(--color-gray-1);
     width:53%;
@@ -1086,8 +1002,6 @@ background-color:var(--color-gray-4);
     display:block;
     padding:3.5rem 0;
     overflow:hidden;
-    
-    
 }
 
 .subscribe .container h1{
@@ -1101,7 +1015,6 @@ background-color:var(--color-gray-4);
 
 .subscribe .container p{
     width:35%;
-    
 }
 
 .subscribe #submit{
@@ -1121,38 +1034,30 @@ background-color:var(--color-gray-4);
     padding-left:1rem;  
 }
 
-        .subscribe #submit button{
-            position:absolute;
-                top:9%;
-                right:1%;
-                height:80%;
-                width:120px;
-                background: var(--color-theme);
-                color:var(--color-white);
-                border:none;
-                border-radius:var(--border-radius-medium);
-                transition:0.2s ease-in-out;
-        }
-
-            .subscribe  #submit button:hover{
-                background-color:var(--color-theme-dark);
-            }
-
-
-           
-
-    .subscribe .tomruta{
+    .subscribe #submit button{
         position:absolute;
-        top:0;
-        left:50%;
-        
-        background-color:var(--color-gray-1);
-        
-        height:100%;
-        
+        top:9%;
+        right:1%;
+        height:80%;
+        width:120px;
+        background: var(--color-theme);
+        color:var(--color-white);
+        border:none;
+        border-radius:var(--border-radius-medium);
+        transition:0.2s ease-in-out;
     }
 
+        .subscribe  #submit button:hover{
+            background-color:var(--color-theme-dark);
+        }
 
+.subscribe .tomruta{
+    position:absolute;
+    top:0;
+    left:50%;
+    background-color:var(--color-gray-1);
+    height:100%;
+}
 
 
 /* FOOTER */
@@ -1169,219 +1074,9 @@ background-color:var(--color-gray-4);
 
 
 
+/* MY ACCOUNT SIDA */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RESPONSIVITET */
-
-
-/* Mobil */
-
-
-@media (min-width:578px){
-    .top-menu .toplinks{
-        display:block;
-
-    }
-    .top-menu > .container{
-        justify-content: space-between;
-    }
-    
-    
-    .main-menu .mlinks{
-        flex:3;
-        display:flex;
-        justify-content:end;
-        align-items:center;
-    }
-
-    .main-menu a{
-        font-size:1em;
-        text-decoration: none;
-        color:var(--color-theme-dark);
-        margin:0 0.8rem;
-        
-    }
-}
-
-
-/* Surfplatta */
-@media (min-width:768px){
-    .mitten .mitten-body h1{
-        font-size:var(--font-size-60);
-
-    }
-    .mitten .mitten-body h1 strong{
-        display:block;
-
-    }
-
-    
-    
-    /* SHOP BY CATEGORY GRID */
-    .shop-by-category .grid{
-    grid-template-columns: repeat(5, minmax(65px, 249px));
-    grid-template-rows: repeat(3, minmax(65px, 249px));
-    }
-
-    #category-box-1{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-    #category-box-2{
-    grid-column: 2/4;
-    grid-row: 1/2;
-}
-
-    #category-box-3{
-    grid-column: 4/-1;
-    grid-row: 1/3;
-
-}
-
-    #category-box-4{
-    grid-column: 1/3;
-    grid-row: 2/-1;
-}
-
-    #category-box-5{
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-    #category-box-6{
-    grid-column: 3/5;
-    grid-row: 3/-1;
-}
-
-    #category-box-7{
-    grid-column: 5/-1;
-    grid-row: 3/-1;
-}
-}
-
-
-/* Liggande platta */
-@media (min-width:992px){
-    
-    .top-menu .toplinks{
-        display: inline;
-    }
-    
-    .top-menu .toplinks .tlinks{
-        display:inline;
-    
-    }
-
-    .mitten .container{
-        display:flex;
-        justify-content: space-between;
-        align-items:center;
-        text-align:left;
-        padding-top:0;
-        padding-bottom:0;
-
-    }
-
-    .mitten img{
-        display:block;
-        width:50%;
-    }
-
-    .webshop-info .container{
-        display:flex;
-        
-}
-
-    
-}
-
-
-
-/* Standard hemsida */
-@media (min-width:1200px){
-    
-    .mitten .mitten-body{
-        flex:1;
-
-    }
-    .mitten .mitten-body p{
-        width:80%;
-    }
-
-    .mitten img{
-        flex:1;
-        width:100%;
-
-    }
-    
-
-    
-}
-
-
-
-
-/* BREADCRUMB SOON tm */
+/* BREADCRUMB */
 
 .breadcrumb{
     background-color:var(--color-gray-6);
@@ -1393,17 +1088,14 @@ background-color:var(--color-gray-4);
     justify-content: space-between;
 }
 
-
 .breadcrumb .breadlinks{
     display:flex;
     align-items:center;
-    
 }
 
 .breadcrumb ul{
     list-style:none;
     font-size:var(--font-size-14);
-    
 }
 
 .breadcrumb h1{
@@ -1414,7 +1106,6 @@ background-color:var(--color-gray-4);
 .breadcrumb a{
     color:var(--color-theme);
     text-decoration: none;
-
 }
 
 .breadcrumb li{
@@ -1427,17 +1118,16 @@ background-color:var(--color-gray-4);
     content:"/\00a0";
 }
 
+
 /* LOG IN */
 
 .remember-password{
     display:flex;
     justify-content:space-between;
-    
 }
 
     .remember-password input{
         width:3%;
-        
     }
 
     .remember-password label{
@@ -1449,7 +1139,6 @@ background-color:var(--color-gray-4);
         color:var(--color-theme);
         text-decoration:none;
         text-shadow:0 0.025em var(--color-theme-dark), 0 -0.025em var(--color-theme-dark);
-                
     }
         .remember-password a:hover{
             color:var(--color-dark);
@@ -1459,9 +1148,6 @@ background-color:var(--color-gray-4);
     display:flex;
     justify-content: space-between;
 }
-
-
-   
 
 
 .or-log-with h1{
@@ -1481,21 +1167,11 @@ background-color:var(--color-gray-4);
 }
 
 
-
-
-
-
-
-
-
-
-
 /* REGISTER*/
 
 .signup-signin{
     margin:6rem 0;
 }
-
 
 .signup-signin .container{
     display:grid;
@@ -1503,4 +1179,137 @@ background-color:var(--color-gray-4);
     column-gap:2rem;
     align-items:start;
 }
+
+
+
+
+
+/* RESPONSIVITET */
+
+@media (min-width:578px){
+    .top-menu .toplinks{
+        display:block;
+    }
+    
+    .top-menu > .container{
+        justify-content: space-between;
+    }
+    
+    .main-menu .mlinks{
+        flex:3;
+        display:flex;
+        justify-content:end;
+        align-items:center;
+    }
+
+    .main-menu a{
+        font-size:1em;
+        text-decoration: none;
+        color:var(--color-theme-dark);
+        margin:0 0.8rem;
+    }
+}
+
+
+
+@media (min-width:768px){
+    .mitten .mitten-body h1{
+        font-size:var(--font-size-60);
+    }
+
+    .mitten .mitten-body h1 strong{
+        display:block;
+    }
+
+    /* SHOP BY CATEGORY GRID */
+    .shop-by-category .grid{
+    grid-template-columns: repeat(5, minmax(65px, 249px));
+    grid-template-rows: repeat(3, minmax(65px, 249px));
+    }
+
+    #category-box-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    }
+
+    #category-box-2{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    }
+
+    #category-box-3{
+    grid-column: 4/-1;
+    grid-row: 1/3;
+    }
+
+    #category-box-4{
+    grid-column: 1/3;
+    grid-row: 2/-1;
+    }
+
+    #category-box-5{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    }
+
+    #category-box-6{
+    grid-column: 3/5;
+    grid-row: 3/-1;
+    }
+
+    #category-box-7{
+    grid-column: 5/-1;
+    grid-row: 3/-1;
+    }
+}
+
+
+@media (min-width:992px){
+    
+    .top-menu .toplinks{
+        display: inline;
+    }
+    
+    .top-menu .toplinks .tlinks{
+        display:inline;
+    }
+
+    .mitten .container{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        text-align:left;
+        padding-top:0;
+        padding-bottom:0;
+    }
+
+    .mitten img{
+        display:block;
+        width:50%;
+    }
+
+    .webshop-info .container{
+        display:flex;
+    }
+}
+
+@media (min-width:1200px){
+    
+    .mitten .mitten-body{
+        flex:1;
+    }
+    .mitten .mitten-body p{
+        width:80%;
+    }
+
+    .mitten img{
+        flex:1;
+        width:100%;
+    }
+}
+
+
+
+
+
 
