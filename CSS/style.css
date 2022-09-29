@@ -478,6 +478,7 @@ html, body {
 
 .mitten .mitten-body p{
     margin:2rem 0;
+    
 
 }
 
@@ -1138,7 +1139,7 @@ background-color:var(--color-gray-4);
             }
 
 
-            /* SKITRUTA, HITTA ETT SÄTT O FIXA */
+           
 
     .subscribe .tomruta{
         position:absolute;
@@ -1458,6 +1459,8 @@ background-color:var(--color-gray-4);
     display:flex;
     justify-content: space-between;
 }
+
+
    
 
 
